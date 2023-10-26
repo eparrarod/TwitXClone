@@ -7,48 +7,48 @@
     tools:context=".MessagesActivity">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/user_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/user_label"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/dob_label"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/username_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/user_label"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8" />
+        app:layout_constraintStart_toEndOf="@+id/user_label" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/dob_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginTop="8dp"
         android:text="@string/dob_label"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/dob"
+        app:layout_constraintEnd_toStartOf="@+id/dob_tv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/user_label" />
 
     <TextView
-        android:id="@+id/dob"
+        android:id="@+id/dob_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dob_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView13" />
+        app:layout_constraintStart_toEndOf="@+id/dob_label" />
 
     <ListView
         android:id="@+id/listView"
@@ -59,8 +59,8 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/message_input"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="@+id/dob_label"
+        app:layout_constraintTop_toBottomOf="@+id/dob_label" />
 
     <EditText
         android:id="@+id/message_input"
@@ -72,13 +72,13 @@
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/send_button"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/dob_label"
         app:layout_constraintTop_toBottomOf="@+id/listView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/send_button"
         android:layout_width="95dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"

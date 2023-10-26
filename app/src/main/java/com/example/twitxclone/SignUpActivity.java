@@ -38,7 +38,6 @@ public class SignUpActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
     }
 
-
     public void onSignUp(View view) {
         String username = usernameText.getText().toString();
         String password = passwordText.getText().toString();
@@ -57,6 +56,8 @@ public class SignUpActivity extends AppCompatActivity {
                     Toast.makeText(SignUpActivity.this, uid, Toast.LENGTH_SHORT).show();
                     databaseRef.child(uid).setValue(user);
                     Intent intent = new Intent(SignUpActivity.this, MessagesActivity.class);
+                    intent.putExtra(User.U_KEY, user.getUsername());
+                    intent.putExtra(User.D_KEY, user.getDob());
                     startActivity(intent);
                 } else {
                     // If sign in fails, display a message to the user.
