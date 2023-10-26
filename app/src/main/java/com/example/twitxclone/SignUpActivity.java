@@ -23,8 +23,6 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
 
-
-
     public void onSignUp(View view) {
         String usern = usernameText.getText().toString();
         String password = passwordText.getText().toString();
