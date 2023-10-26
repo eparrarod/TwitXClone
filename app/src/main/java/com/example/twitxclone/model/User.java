@@ -3,6 +3,8 @@ package com.example.twitxclone.model;
 public class User {
     String username;
     String dob;
+    public static final String U_KEY = "user";
+    public static final String D_KEY = "birth";
 
     public String getUsername() {
         return username;
